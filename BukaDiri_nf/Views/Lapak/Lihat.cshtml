@@ -1,0 +1,22 @@
+﻿@model BukaDiri_nf.Models.Lapak
+@{
+    ViewBag.Title = "Lihat";
+}
+
+<table class="table">
+    <tr>
+        <td>Kode Lapak</td>
+        <td>@Model.kodeLapak</td>
+    </tr>
+    <tr>
+        <td>Nama Lapak</td>
+        <td>@Model.namaLapak</td>
+    </tr>
+    <tr>
+        <td>Peringkat Lapak</td>
+        <td>@Model.peringkatLapak</td>
+    </tr>
+</table>
+
+<a href="/Lapak/Index" class="btn btn-primary">Data Provinsi</a>
+

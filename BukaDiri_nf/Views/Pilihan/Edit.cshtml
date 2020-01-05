@@ -1,0 +1,33 @@
+﻿@model BukaDiri_nf.Models.Pilihan
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="text-center">
+    <h2>Ubah Data Pilihan</h2>
+    <hr />
+</div>
+<form action="/Pilihan/Update" method="post">
+    <table class="table" style="width: 50%">
+        <tr>
+            <td>Kode Pilihan</td>
+            <td><input type="text" name="kodePilihan" class="form-control" value="@Model.kodePilihan" readonly/></td>
+        </tr>
+        <tr>
+            <td>Nama Pilihan</td>
+            <td><input type="text" name="namaPilihan" class="form-control" value="@Model.namaPilihan" /></td>
+        </tr>
+        <tr>
+            <td>Diskon</td>
+            <td><input type="text" name="diskonPilihan" class="form-control" value="@Model.diskonPilihan" /></td>
+        </tr>
+        <tr style="text-align: right;">
+            <td colspan="2">
+                <a href="/Pilihan/Index" class="btn btn-primary">Data Pilihan</a>
+                <button type="reset" class="btn btn-secondary">Kosongkan</button>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </td>
+        </tr>
+    </table>
+</form>
+

@@ -1,0 +1,84 @@
+﻿@model BukaDiri_nf.Models.Item
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="text-center">
+    <h2>Ubah Data Item</h2>
+    <hr />
+</div>
+<form action="/Item/Update" method="post">
+    <table class="table" style="width: 50%">
+        <tr>
+            <td>Kode Item</td>
+            <td><input type="text" name="kodeItem" class="form-control" value="@Model.kodeItem" readonly/></td>
+        </tr>
+        <tr>
+            <td>Nama Item</td>
+            <td><input type="text" name="namaItem" class="form-control" value="@Model.namaItem"/></td>
+        </tr>
+        <tr>
+            <td>Harga Item</td>
+            <td><input type="text" name="hargaItem" class="form-control" value="@Model.hargaItem"/></td>
+        </tr>
+        <tr>
+            <td>Nama Provinsi</td>
+            <td>
+                <select name="kodeProvinsi">
+                    @foreach (var item in ViewData["Provinsi"] as List<BukaDiri_nf.Models.Provinsi>)
+                    {
+                        if (@Model.kodeProvinsi.Equals(@item.kodeProvinsi))
+                        {
+                            <option>@item.namaProvinsi</option>
+                        } else
+                        { 
+                            <option value="@Model.kodeProvinsi">@item.namaProvinsi</option>
+                        }
+                    }
+                    </select>
+                    </td>
+                </tr>
+        <tr>
+            <td>Nama Pilihan</td>
+            <td>
+                <select name="kodePilihan">
+                    @foreach (var item in ViewData["Pilihan"] as List<BukaDiri_nf.Models.Pilihan>)
+                    {
+                        if (@Model.kodePilihan.Equals(@item.kodePilihan))
+                        {
+                            <option value="@Model.kodePilihan">@item.namaPilihan</option>
+                        } else
+                        { 
+                            <option value="@Model.kodePilihan">@item.namaPilihan</option>
+                        }
+                    }
+                    </select>
+                    </td>
+                </tr>
+        <tr>
+            <td>Nama Lapak</td>
+            <td>
+                <select name="kodeLapak">
+                    @foreach (var item in ViewData["Lapak"] as List<BukaDiri_nf.Models.Lapak>)
+                    {
+                        if (@Model.kodeLapak.Equals(@item.kodeLapak))
+                        {
+                            <option>@item.namaLapak</option>
+                        } else
+                        { 
+                            <option value="@Model.kodeLapak">@item.namaLapak</option>
+                        }
+                    }
+                    </select>
+                    </td>
+                </tr>
+        <tr style="text-align: right;">
+            <td colspan="2">
+                <a href="/Item/Index" class="btn btn-primary">Data Item</a>
+                <button type="reset" class="btn btn-secondary">Kosongkan</button>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </td>
+        </tr>
+    </table>
+</form>
+

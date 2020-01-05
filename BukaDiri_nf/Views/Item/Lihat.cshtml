@@ -1,0 +1,53 @@
+﻿@model BukaDiri_nf.Models.Item
+@{
+    ViewBag.Title = "Lihat";
+}
+
+<table class="table">
+    <tr>
+        <td>Kode Item</td>
+        <td>@Model.kodeItem</td>
+    </tr>
+    <tr>
+        <td>Nama Item</td>
+        <td>@Model.namaItem</td>
+    </tr>
+    <tr>
+        <td>Harga Item</td>
+        <td>@Model.hargaItem</td>
+    </tr>
+    <tr>
+        <td>Nama Provinsi</td>
+        @foreach (var item in ViewData["Provinsi"] as List<BukaDiri_nf.Models.Provinsi>)
+        {
+            if (@Model.kodeProvinsi.Equals(@item.kodeProvinsi))
+            { 
+                <td>@item.namaProvinsi</td>
+            }
+        }
+    </tr>
+    <tr>
+        <td>Nama Pilihan</td>
+        @foreach (var item in ViewData["Pilihan"] as List<BukaDiri_nf.Models.Pilihan>)
+        {
+            if (@Model.kodePilihan.Equals(@item.kodePilihan))
+            {
+                <td>@item.namaPilihan</td>
+            }
+        }
+    </tr>
+    <tr>
+        <td>Nama Lapak</td>
+        @foreach (var item in ViewData["Lapak"] as List<BukaDiri_nf.Models.Lapak>)
+        {
+            if (@Model.kodeLapak.Equals(@item.kodeLapak))
+            {
+                <td>@item.namaLapak</td>
+            }
+        }
+    </tr>
+</table>
+
+<a href="/Lapak/Index" class="btn btn-primary">Data Provinsi</a>
+
+

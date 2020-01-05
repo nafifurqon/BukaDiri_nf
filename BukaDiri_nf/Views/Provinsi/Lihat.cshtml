@@ -1,0 +1,22 @@
+﻿@model BukaDiri_nf.Models.Provinsi
+@{
+    ViewBag.Title = "Lihat";
+}
+
+<table class="table table-bordered w-25" >
+    <tr>
+        <td class="bg-light">Kode Provinsi</td>
+        <td>@Model.kodeProvinsi</td>
+    </tr>
+    <tr>
+        <td class="bg-light">Nama Provinsi</td>
+        <td>@Model.namaProvinsi</td>
+    </tr>
+    <tr>
+        <td class="bg-light">Jumlah Kota</td>
+        <td>@Model.jumlahKotaProvinsi</td>
+    </tr>
+</table>
+
+<a href="/Provinsi/Index" class="btn btn-primary" >Data Provinsi</a>
+

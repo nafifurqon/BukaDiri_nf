@@ -1,0 +1,14 @@
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\BukaDiri_nf.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\BukaDiri_nf.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\BukaDiri_nf.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Webpages.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Webpages.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Helpers.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\bin\System.Web.Mvc.xml
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\obj\Debug\BukaDiri_nf.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\obj\Debug\BukaDiri_nf.dll
+C:\Users\Lenovo\Documents\Visual Studio 2013\Projects\BukaDiri_nf\BukaDiri_nf\obj\Debug\BukaDiri_nf.pdb

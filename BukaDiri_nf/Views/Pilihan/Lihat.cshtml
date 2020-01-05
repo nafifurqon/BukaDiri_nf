@@ -1,0 +1,22 @@
+﻿@model BukaDiri_nf.Models.Pilihan
+@{
+    ViewBag.Title = "Lihat";
+}
+
+<table class="table table-bordered w-25">
+    <tr>
+        <td class="bg-light">Kode Pilihan</td>
+        <td>@Model.kodePilihan</td>
+    </tr>
+    <tr>
+        <td class="bg-light">Nama Pilihan</td>
+        <td>@Model.namaPilihan</td>
+    </tr>
+    <tr>
+        <td class="bg-light">Jumlah Kota</td>
+        <td>@Model.diskonPilihan</td>
+    </tr>
+</table>
+
+<a href="/Pilihan/Index" class="btn btn-primary">Data Provinsi</a>
+

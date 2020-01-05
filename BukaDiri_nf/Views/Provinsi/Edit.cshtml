@@ -1,0 +1,33 @@
+﻿@model BukaDiri_nf.Models.Provinsi
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div class="text-center">
+    <h2>Ubah Data Provinsi</h2>
+    <hr />
+</div>
+<form action="/Provinsi/Update" method="post">
+    <table class="table" style="width: 50%">
+        <tr>
+            <td>Kode Provinsi</td>
+            <td><input type="text" name="kodeProvinsi" class="form-control" value="@Model.kodeProvinsi" readonly/></td>
+        </tr>
+        <tr>
+            <td>Nama Provinsi</td>
+            <td><input type="text" name="namaProvinsi" class="form-control" value="@Model.namaProvinsi" /></td>
+        </tr>
+        <tr>
+            <td>Jumlah Kota</td>
+            <td><input type="text" name="jumlahKotaProvinsi" class="form-control" value="@Model.jumlahKotaProvinsi" /></td>
+        </tr>
+        <tr style="text-align: right;">
+            <td colspan="2">
+                <a href="/Provinsi/Index" class="btn btn-primary">Data Provinsi</a>
+                <button type="reset" class="btn btn-secondary">Kosongkan</button>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </td>
+        </tr>
+    </table>
+</form>
+

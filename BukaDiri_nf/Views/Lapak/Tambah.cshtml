@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Tambah";
+}
+
+<div class="text-center">
+    <h2>Tambah Data Lapak</h2>
+    <hr />
+</div>
+<form action="/Lapak/Simpan" method="post">
+    <table class="table" style="width: 50%">
+        <tr>
+            <td>Kode Lapak</td>
+            <td><input type="text" name="kodeLapak" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Nama Lapak</td>
+            <td><input type="text" name="namaLapak" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Peringkat Lapak</td>
+            <td><input type="text" name="peringkatLapak" class="form-control" /></td>
+        </tr>
+        <tr style="text-align: right;">
+            <td colspan="2">
+                <a href="/Lapak/Index" class="btn btn-primary">Data Lapak</a>
+                <button type="reset" class="btn btn-secondary">Kosongkan</button>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
